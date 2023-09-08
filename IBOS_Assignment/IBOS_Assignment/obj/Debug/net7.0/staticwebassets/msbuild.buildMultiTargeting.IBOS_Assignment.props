@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IBOS_Assignment.props" />
+</Project>
