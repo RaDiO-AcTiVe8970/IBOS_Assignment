@@ -3,8 +3,10 @@
 This project is an API for managing employee data using C#, .NET Core, MSSQL, and Entity Framework Core. It provides various endpoints to perform operations related to employee management.
 
 ## Used
-- ASP.NET 7
+- ASP.NET Core 7
 - Swagger
+- MSSQL
+- Entity Framework Core
 
 ## Table of Contents
    - API01: Update an Employee's Information
@@ -14,19 +16,19 @@ This project is an API for managing employee data using C#, .NET Core, MSSQL, an
    - API05: Get Employee Hierarchy
 
 ## API01: Update an Employee's Information
-  -  Endpoint:/api/Employee/{id}
+  -  Endpoint:/api/Employee/updateEmployee/{id}
   -  Description: Update an employee's Employee Name and Code. Duplicate employee codes are not allowed.
 
 ## API02: Get Employee with 3rd Highest Salary
-  -  Endpoint:/api/Employee/thirdhighestsalary
+  -  Endpoint:/api/Employee/thirdHighestSal
   -  Description: Get the employee with the 3rd highest salary.
 
 ## API03: Get Employees with No Absent Record
-  -  Endpoint:/api/EmployeeAttendance/maxsalarynoabsent
+  -  Endpoint:/api/EmployeeAttendance/maxSalaryWithoutAbsent
   -  Description: Get all employees based on maximum to minimum salary who have no absent records.
 
 ##  API04: Get Monthly Attendance Report
-  - Endpoint:/api/EmployeeAttendanceReport/monthlyattendancereport
+  - Endpoint:/api/EmployeeAttendance/maxSalaryWithoutAbsent
   - Description: Get the monthly attendance report of all employees.
   Report Columns:
 
@@ -38,14 +40,14 @@ This project is an API for managing employee data using C#, .NET Core, MSSQL, an
     Total Offday
 
 ## API05: Get Employee Hierarchy
-  -  Endpoint:/api/Employee/hierarchy/{employeeId}
+  -  Endpoint:/api/Employee/hierarchyFinder/{employeeId}
   -  Description: Get the hierarchy of employees based on the supervisor of an input employee.
     Example Input Employee Id: 502036
     Example Output Employees:
         Selim Reja =>
         Rasel Shikder =>
         Hasan Abdullah =>
-        Ashikur Rahman =>
+        Ashikur Rahman
 
 ## Installation and Usage
 Follow these steps to install and run the Employee Management API:
