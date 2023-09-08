@@ -42,10 +42,10 @@ This project is an API for managing employee data using C#, .NET Core, MSSQL, an
   -  Description: Get the hierarchy of employees based on the supervisor of an input employee.
     Example Input Employee Id: 502036
     Example Output Employees:
-        Selim Reja
-        Rasel Shikder
-        Hasan Abdullah
-        Ashikur Rahman
+        Selim Reja =>
+        Rasel Shikder =>
+        Hasan Abdullah =>
+        Ashikur Rahman =>
 
 ## Installation and Usage
 Follow these steps to install and run the Employee Management API:
@@ -63,7 +63,7 @@ Follow these steps to install and run the Employee Management API:
   ```
   - Run the database migrations to create the necessary tables:
   ```
-    add-migration any identified
+    add-migration "Use any Name"
     update-database
   ```
   - Build the application:
@@ -75,6 +75,5 @@ Follow these steps to install and run the Employee Management API:
     dotnet run
   ```
 
-  The API will start, and you can access it at http://localhost:5000 (or https://localhost:5001 for HTTPS). You can use tools like Postman or curl to interact with the API endpoints.
 
   Feel free to reach out if you have any questions or need further assistance with this project.
